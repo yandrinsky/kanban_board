@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canban</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">Канбан-доска</div>
+    </div>
+</header>
+<section class="app">
+    <div class="container">
+        <div class="add__task">
+            <div class="add__task_window">
+                <div class="add__task_title">
+                    Новая задача
+                </div>
+                <input type="text" class="add__task_input" tabindex="0">
+                <button class="add__task_btn">
+                    <p class="add__task_btn_plus">+</p>
+                    <p class="add__task_btn_text">Добавить</p>
+                </button>
+                <div class="warning">
+                    <div class="warning__text">
+                        Введите задачу!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task_board">
+            <div class="cell_backlog">
+                <div class="backlog_title cell_title">
+                    Бэклог
+                </div>
+                <div class="backlog_area js_area" data-id="backlog">
+
+                </div>
+            </div>
+            <div class="cell_process">
+                <div class="process_title cell_title">
+                    В процессе
+                </div>
+                <div class="process_area js_area" data-id="process">
+                </div>
+            </div>
+            <div class="cell_done">
+                <div class="done_title cell_title">
+                    Готово
+                </div>
+                <div class="done_area js_area" data-id="done"></div>
+            </div>
+            <div class="cell_circle">
+                <div class="circle_title cell_title">
+                    Корзина
+                </div>
+                <div class="circle_area js_area" data-id="circle"></div>
+                <button class="delete_tasks">
+                    Очистить
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
